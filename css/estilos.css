@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* MAQUETACION CON GRID */
+
+.contenedor { 
+    display: grid;
+    width: 100%;
+    grid-template-areas: "titulo titulo nave nave"
+                        "menu menu menu menu"
+                        "menu menu menu menu"
+                        "pie pie pie pie";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../img/fondo.jpg);
+}
+
+
+/* HEADER Y NAV*/
+
+.logo {
+    height: 100px;
+    grid-area: titulo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1  {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.barra {
+    height: 100px;
+    grid-area: nave;
+}
+
+.seccion { 
+    min-height: 100vh;
+    grid-area: menu;
+}
+
+.footer { 
+    background-color: grey;
+    min-height: 200px;
+    grid-area: pie;
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    position: fixed;
+}
+
+li a{
+    display: inline-block;
+    padding: 35px 5px;
+    text-decoration: none;
+    margin-left: 35px;
+    color: black;
+}
+
+.barra a:hover {
+    color: beige;
+}
+
+
+
+.hide {
+    padding: 16px;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* MENU INDEX */
+
+.tituloIndex { 
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 25%;
+}
+
+/* MENU Nosotros */
+
+.nosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+.nosotros1 { 
+    height: fit-content;
+    padding: 15px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: whitesmoke;
+}
+
+.nosotros2 { 
+    height: fit-content;
+    padding: 15px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: whitesmoke;
+}
+
+.nosotros3 { 
+    height: fit-content;
+    padding: 15px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: whitesmoke;
+}
+
+/* MENU PRODUCTOS */
+
+img {
+    height: 300px;
+}
+
+.tituloProductos { 
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fotos {
+    padding: 15px;
+}
+
+/* MENU UBICACION */
+
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 600px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+iframe {
+    margin: 20px 400px 150px;
+}
+
+
+/* PAGINA CONTACTO */
+
+.form {
+    width: 410px;
+    text-align: center;
+    background-color: rgba(221, 190, 169, 0.5);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.formulario{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+}
+
+input { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    width: 90%;
+    background-color: #ffe8d6;
+    border-radius: 10px;
+}
+
+.news .newsSi {
+    text-align: center;
+    width: fit-content;
+}
+
+.botones {
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.news {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.comentarios {
+    border-radius: 10px;
+    background-color: #ffe8d6;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.contenedorFooter { 
+    display: flex;
+    flex-direction: row;
+}
+
+.caja1 {
+    width: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.caja2 {
+    width: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.caja3 {
+    width: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+}
+
+.links {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.rrss {
+    font-size:larger;
+    padding: 5px;
+}
+
+/* responsive nav */
+
+@media (max-width: 768px) {
+    ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    display: none;}
+
+    .hide {  
+        display: block;
+    }
+
+    nav ul {
+    display: none;
+
+    }
+}
+
+/* responsive nosotros */
+
+@media only screen and (min-width: 320px) and (max-width: 799px){
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contenedor {
+        background-image: cover;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor {
+        background-image: cover;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contenedor {
+        background-image: cover;
+    }
+}
+
+/* responsive productos */
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contenedor {
+        background-image: cover;
+    }
+}
+@media only screen and (min-width: 670px) and (max-width: 999px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedor {
+        background-image: cover;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1349) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contenedor {
+        background-image: cover;
+    }
+}
+@media only screen and (min-width: 1350px) and (max-width: 1400px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);}
+    .contenedor {
+            background-image: cover;
+        }
+
+}
+
+/* responsive ubicacion */
+
+@media only screen and (min-width: 320px) and (max-width: 1399px) {
+    iframe {
+        display: none;
+    }
+
+    .btn {
+        margin: 25%;
+    }
+} 
+
+/* responsive footer */
+
+@media only screen and (min-width: 1px) and (max-width: 450px) {
+    .contenedorFooter {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 662px) {
+    .contenedorFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 663px) and (max-width: 1400px){
+    .contenedorFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
