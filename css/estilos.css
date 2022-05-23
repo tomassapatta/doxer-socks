@@ -93,13 +93,13 @@ li a{
 
 /* MENU Nosotros */
 
-.nosotros{
+.nosotros { 
     display: flex;
     flex-direction: row;
 }
 
-.nosotros1 { 
-    height: fit-content;
+.parrafo { 
+    height: 200px;
     padding: 15px;
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -112,33 +112,28 @@ li a{
     background-color: whitesmoke;
 }
 
-.nosotros2 { 
-    height: fit-content;
-    padding: 15px;
-    margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: normal;
-    text-transform: capitalize;
-    text-align: left;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-left: 5px;
-    background-color: whitesmoke;
+
+.t1{ 
+    transition: height 2s;
 }
 
-.nosotros3 { 
-    height: fit-content;
-    padding: 15px;
-    margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: normal;
-    text-transform: capitalize;
-    text-align: left;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    background-color: whitesmoke;
+.t1:hover{
+    height: 400px;
+}
+
+
+.t2:active{
+    height: 400px;
+    width: 400px;
+}
+
+.t2{
+    transition: height 2s;
+}
+
+.t3:hover {
+    transform: scale(2);
+    transition: all 1s;
 }
 
 /* MENU PRODUCTOS */
@@ -163,6 +158,11 @@ img {
 
 .fotos {
     padding: 15px;
+}
+
+.fotos:hover   {
+    transform: scale(1.5);
+    transition: all 1s;
 }
 
 /* MENU UBICACION */
